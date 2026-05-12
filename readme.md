@@ -16,6 +16,8 @@ print(mySDK.get(page=2))  # Pegue vários personagens de uma página específica
 ## Exemplo básico
 
 ```py
+from rickandmortysdk import RickAndMortySDK
+
 rick = mySDK.get(1)
 
 print(rick['result']['name'])
