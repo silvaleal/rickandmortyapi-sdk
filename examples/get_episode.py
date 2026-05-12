@@ -2,10 +2,10 @@ from rickandmortysdk import RickAndMortySDK
 
 mySDK = RickAndMortySDK().setPrefix('episode')
 
-earth = mySDK.get(1)
+episode = mySDK.get(1)
 
-print(earth['result']['name'])
-print(earth['result']['air_date'])
-print(earth['result']['episode'])
-print(earth['result']['characters'])
-print(earth['result']['created'])
+print(episode['result']['name'])
+print(episode['result']['air_date'])
+print(episode['result']['episode'])
+print(episode['result']['characters'])
+print(episode['result']['created'])
