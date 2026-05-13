@@ -1,6 +1,6 @@
 import requests
 
-class RickAndMortySDK:
+class UORickAndMortySDK:
     def __init__(self):
         self.baseUrl = 'https://rickandmortyapi.com/api'
         self.prefix = None # A API é dividida entre tipos de consultar, character, location e episode, o prefixo ajuda a identificar o tipo.

@@ -1,6 +1,6 @@
-from rickandmortysdk import RickAndMortySDK
+from uorickandmortysdk import UORickAndMortySDK
 
-mySDK = RickAndMortySDK().setPrefix('character')
+mySDK = UORickAndMortySDK().setPrefix('character')
 
 # print(mySDK.get(1))       # Pegue um personagem específico.
 # print(mySDK.get())        # Pegue vários personagens.
