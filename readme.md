@@ -4,12 +4,19 @@
 
 Unofficial SDK library for interacting with the API [Rick and Morty API](https://rickandmortyapi.com/api?utm_source=chatgpt.com).
 
+
+## Install
+
+```bash
+pip install UORickandmortyapi-sdk
+```
+
 ## Basic Usage
 
 ```python
-from rickandmortysdk import RickAndMortySDK
+from uorickandmortysdk import UORickAndMortySDK
 
-mySDK = RickAndMortySDK().setPrefix('character')
+mySDK = UORickAndMortySDK().setPrefix('character')
 
 print(mySDK.get(1))       # Get a specific character.
 print(mySDK.get())        # Get multiple characters.
