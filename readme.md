@@ -1,22 +1,27 @@
-## Rick And Morty SDK - Não oficial
+# Rick And Morty SDK - Unofficial
 
-Biblioteca SDK não oficial para consultar a API https://rickandmortyapi.com/api.
+[![PyPI version](https://img.shields.io/pypi/v/UORickandmortyapi-sdk.svg)](https://pypi.org/project/UORickandmortyapi-sdk/)
 
-## Uso básico
+Unofficial SDK library for interacting with the API [Rick and Morty API](https://rickandmortyapi.com/api?utm_source=chatgpt.com).
+
+## Basic Usage
+
 ```python
 from rickandmortysdk import RickAndMortySDK
 
 mySDK = RickAndMortySDK().setPrefix('character')
 
-print(mySDK.get(1))       # Pegue um personagem específico.
-print(mySDK.get())        # Pegue vários personagens.
-print(mySDK.get(page=2))  # Pegue vários personagens de uma página específica.
+print(mySDK.get(1))       # Get a specific character.
+print(mySDK.get())        # Get multiple characters.
+print(mySDK.get(page=2))  # Get characters from a specific page.
 ```
 
-## Exemplo básico
+## Basic Example
 
-```py
-from rickandmortysdk import RickAndMortySDK
+```python
+from uorickandmortysdk import UORickAndMortySDK
+
+mySDK = UORickAndMortySDK().setPrefix('character')
 
 rick = mySDK.get(1)
 
@@ -32,7 +37,7 @@ print(rick['result']['origin']['url'])
 # Rick Sanchez
 # Alive
 # Human
-# 
+#
 # Male
 # Earth (C-137)
 # https://rickandmortyapi.com/api/location/1

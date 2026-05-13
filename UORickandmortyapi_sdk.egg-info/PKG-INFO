@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: UORickandmortyapi_sdk
+Version: 0.0.1
+Summary: SDK da api rickandmorty não oficial
+Author: silvaleal
+Author-email: me@silvaleal.dev
+License: MIT License
+Keywords: sdk api rickandmorty rick morty
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+## Rick And Morty SDK - NÃ£o oficial
+
+Biblioteca SDK nÃ£o oficial para consultar a API https://rickandmortyapi.com/api.
+
+## Uso bÃ¡sico
+```python
+from rickandmortysdk import RickAndMortySDK
+
+mySDK = RickAndMortySDK().setPrefix('character')
+
+print(mySDK.get(1))       # Pegue um personagem especÃ­fico.
+print(mySDK.get())        # Pegue vÃ¡rios personagens.
+print(mySDK.get(page=2))  # Pegue vÃ¡rios personagens de uma pÃ¡gina especÃ­fica.
+```
+
+## Exemplo bÃ¡sico
+
+```py
+from rickandmortysdk import RickAndMortySDK
+
+rick = mySDK.get(1)
+
+print(rick['result']['name'])
+print(rick['result']['status'])
+print(rick['result']['species'])
+print(rick['result']['type'])
+print(rick['result']['gender'])
+print(rick['result']['origin']['name'])
+print(rick['result']['origin']['url'])
+
+# ------- OUTPUT --------------#
+# Rick Sanchez
+# Alive
+# Human
+# 
+# Male
+# Earth (C-137)
+# https://rickandmortyapi.com/api/location/1
+```

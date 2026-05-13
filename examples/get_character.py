@@ -1,6 +1,6 @@
-from rickandmortysdk import RickAndMortySDK
+from uorickandmortysdk import UORickAndMortySDK
 
-mySDK = RickAndMortySDK().setPrefix('character')
+mySDK = UORickAndMortySDK().setPrefix('character')
 
 rick = mySDK.get(1)
 

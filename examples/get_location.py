@@ -1,6 +1,6 @@
-from rickandmortysdk import RickAndMortySDK
+from uorickandmortysdk import UORickAndMortySDK
 
-mySDK = RickAndMortySDK().setPrefix('location')
+mySDK = UORickAndMortySDK().setPrefix('character')
 
 earth = mySDK.get(1)
 
